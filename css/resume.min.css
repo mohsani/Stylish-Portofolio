@@ -1,0 +1,342 @@
+*/body {
+    font-family: 'PT Sans', sans-serif;
+    padding-top: 54px;
+    color: #868e96
+}
+
+@media (min-width:992px) {
+    body {
+        padding-top: 0;
+        padding-left: 17rem
+    }
+}
+
+h1 {
+    font-size: 6rem;
+    line-height: 5.5rem
+}
+
+h2 {
+    font-size: 3.5rem
+}
+
+h3 {
+    font-size: 2rem
+}
+
+p.lead {
+    font-size: 1.25rem;
+    font-weight: 250;
+    word-wrap: break-word;
+}
+
+.m-0 {
+    margin: 3rem !important;
+}
+
+.subheading {
+    text-transform: uppercase;
+    font-weight: 450;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 1.25rem;
+}
+
+.social-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -25px;
+}
+
+.social-buttons__button {
+    margin: 15px 5px 0;
+}
+
+.social-button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    width: 75px;
+    height: 75px;
+    text-decoration: none;
+}
+
+.social-button__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    border-radius: 100%;
+    background: #fff;
+    text-align: center;
+}
+
+.social-button i,
+.social-button svg {
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.social-button i {
+    font-size: 30px;
+}
+
+.social-button svg {
+    height: 40%;
+    width: 40%;
+}
+
+.social-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+    transition: 0.3s;
+}
+
+.social-button:focus,
+.social-button:hover {
+    color: #fff;
+}
+
+.social-button:focus::after,
+.social-button:hover::after {
+    width: 100%;
+    height: 100%;
+    margin-left: -50%;
+}
+
+.social-button--instagram {
+    color: #e4405f;
+}
+
+.social-button--instagram::after {
+    background: #e4405f;
+}
+
+.social-button--linkedin {
+    color: #0077b5;
+}
+
+.social-button--linkedin::after {
+    background: #0077b5;
+}
+
+.social-button--twitter {
+    color: #55acee;
+}
+
+.social-button--twitter::after {
+    background: #55acee;
+}
+
+a {
+    text-decoration: none;
+    color: #4f4f4f;
+    text-transform: uppercase;
+}
+
+.button-container {
+    font-weight: 450;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 1em 3rem;
+    border: 1px solid #4f4f4f;
+    border-radius: 7px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+}
+
+.button:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.25);
+    top: 100%;
+    width: 200px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button:after {
+    content: "";
+    position: absolute;
+    left: 55%;
+    transform: translateX(-50%) scaleY(1) scaleX(1.45);
+    top: 180%;
+    width: 160%;
+    height: 190%;
+    background-color: #6f47cc;
+    border-radius: 50%;
+    display: block;
+    transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+    z-index: -1;
+}
+
+.button:hover {
+    color: #ffffff;
+    border: 1px solid #6f47cc;
+}
+
+.button:hover:before {
+    top: -35%;
+    background-color: #6f47cc;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button:hover:after {
+    top: -45%;
+    background-color: #6f47cc;
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.dev-icons {
+    font-size: 2.7rem
+}
+
+.dev-icons .list-inline-item i:hover {
+    color: #46da72e5
+}
+
+#sideNav .navbar-nav .nav-item .nav-link {
+    font-weight: 500px;
+    letter-spacing: .05rem;
+    text-transform: uppercase
+}
+
+#sideNav .navbar-toggler:focus {
+    outline-color: #afafafc7
+}
+
+@media (min-width:992px) {
+    #sideNav {
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        width: 15rem;
+        height: 100vh
+    }
+    #sideNav .navbar-brand {
+        display: flex;
+        margin: auto auto 0;
+        padding: .5rem
+    }
+    #sideNav .navbar-brand .img-profile {
+        max-width: 11rem;
+        max-height: 11rem;
+        border: .25rem solid rgba(255, 255, 255, 0.822)
+    }
+    #sideNav .navbar-collapse {
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 0;
+        width: 100%;
+        margin-bottom: auto
+    }
+    #sideNav .navbar-collapse .navbar-nav {
+        flex-direction: column;
+        width: 100%
+    }
+    #sideNav .navbar-collapse .navbar-nav .nav-item {
+        display: block
+    }
+    #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+        display: block
+    }
+}
+
+section.resume-section {
+    padding-top: 5rem!important;
+    padding-bottom: 5rem!important;
+    max-width: 75rem
+}
+
+section.resume-section .resume-item .resume-date {
+    min-width: none
+}
+
+@media (min-width:768px) {
+    section.resume-section {
+        min-height: 100vh
+    }
+    section.resume-section .resume-item .resume-date {
+        min-width: 18rem
+    }
+}
+
+@media (min-width:992px) {
+    section.resume-section {
+        padding-top: 3rem!important;
+        padding-bottom: 3rem!important
+    }
+}
+
+.bg-primary {
+    background-color: #694dc5!important
+}
+
+.text-primary {
+    color: #2e7d32!important
+}
+
+a {
+    color: #2e7d32
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img-size1 {
+    max-width: 450px;
+    height: auto;
+    margin: 25px;
+}
+
+.img-size2 {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.title {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-top: .2rem;
+    color: #4f4f4f;
+}
+
+.site-footer {
+    font-family: 'PT Sans', sans-serif;
+    padding-top: 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}

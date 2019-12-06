@@ -1,0 +1,33 @@
+.article {
+    width: 100%;
+    max-width: 50em;
+    margin: 0 auto;
+    padding: 1em;
+    counter-reset: figures;
+}
+
+.article h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 1em 0;
+    font-size: 2.3em;
+    border-bottom: 3px solid #3f51b5e3;
+    padding-bottom: .3em;
+    color: #3f51b5;
+}
+
+.article p {
+    margin-bottom: 1em;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.figure img {
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+}
+
+.figure img {
+    max-width: 100%;
+}
