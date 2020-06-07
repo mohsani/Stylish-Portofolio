@@ -1,1 +1,1 @@
-# Stylish-Portofolio for personal purposes.
+# Stylish-Portofolio for personal usages and maybe more.
