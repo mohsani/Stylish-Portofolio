@@ -1,1 +1,1 @@
-# Stylish-Portofolio
+# Stylish-Portofolio for personal purposes.
